@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Snow rider 3d</title>
+</head>
+<body>
+
+<h2>Fullscreen with JavaScript</h2>
+<p>Click on the button to open the game in fullscreen mode.</p>
+<button onclick="openFullscreen();">Open game in Fullscreen Mode</button>
+<p><strong>Tip:</strong> Press the "Esc" key to exit full screen.</p>
+        <p><span class= "note">Snow Rider 3d provided by dal-stars1993.atwebpages.com Your support is very much much much appreciated</span></p>
+
+<iframe src="https://script.google.com/macros/s/AKfycbw5Z-Ryg_JfIIDYH7pzzPKXlr2tN0HCw-tT_ZvxBGDPsDDY41ewPVneVeLzelfpnBab/exec" controls id="myvideo">
+</iframe>
+
+
+<script>
+var elem = document.getElementById("myvideo");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+
+<p>Note: Internet Explorer 10 and earlier versions do not support the msRequestFullscreen() method.</p>
+<style>
+        body {
+        background-color: #006847
+        }
+        
+        span.note { font : large "Comic Sans MS", cursive}
+        </style>
+<button onclick="openGame()">Open Game</button>
+<script>
+function openGame() {
+var win = window.open()
+var url = "https://script.google.com/macros/s/AKfycbw5Z-Ryg_JfIIDYH7pzzPKXlr2tN0HCw-tT_ZvxBGDPsDDY41ewPVneVeLzelfpnBab/exec"
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%";
+iframe.style.height = "100%";
+iframe.style.border = "none";
+iframe.src = url
+win.document.body.appendChild(iframe)
+}
+</script>
+        </body>
+</html>
+
